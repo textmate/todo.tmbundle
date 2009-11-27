@@ -44,7 +44,7 @@
 
 #todo_list .counters {
 	padding: 0;
-	padding-bottom: 3em;
+	overflow: hidden;
 }
 
 #todo_list .counters li {
@@ -71,7 +71,7 @@
 }
 
 #todo_list .todo_hidden {
-  display: none;
+	display: none;
 }
 
 /* TODO: alternate row bg colors don't work anymore with filtering */
@@ -83,4 +83,24 @@
 	position: fixed;
 	bottom: 1em;
 	right: 1em;
+}
+
+label.filter {
+	position: absolute;
+	padding-top: 4px;
+}
+
+#filter, #trigger_relative_paths {
+	margin-left: 4em;
+}
+
+fieldset {
+	clear: both;
+}
+fieldset p {
+	margin: 0;
+}
+
+fieldset p ~ p {
+	margin-top: 1ex;
 }
