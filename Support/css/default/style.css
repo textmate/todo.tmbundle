@@ -86,8 +86,12 @@
 }
 
 label.filter {
-	position: absolute;
-	padding-top: 4px;
+  position: absolute;
+  padding-top: 4px;
+}
+
+label.disabled {
+  opacity: .66;
 }
 
 #filter, #trigger_relative_paths {

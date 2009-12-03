@@ -65,7 +65,7 @@ puts ERB.new(File.read("#{ENV['TM_BUNDLE_SUPPORT']}/template_head.rhtml"), 0, '<
 
 STDOUT.flush
 
-project_dir = ENV['TM_PROJECT_DIRECTORY']
+project_dir = ENV['TM_PROJECT_DIRECTORY'] || ""
 home_dir = /^#{Regexp.escape ENV['HOME']}/
 total = 0
 TextMate.each_text_file do |file|

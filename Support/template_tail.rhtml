@@ -7,7 +7,7 @@
 	<fieldset>
 		<legend>Options</legend>
 		<p><label class="filter">Filter:</label><input type="text" value="" id="filter" size="40"></p>
-		<p><input type="checkbox" id="trigger_relative_paths"> <label for="trigger_relative_paths">Show relative paths</label> </p>
+		<p><input type="checkbox" id="trigger_relative_paths" <% if project_dir == "" %>disabled="true"<% end %>> <label for="trigger_relative_paths" <% if project_dir == "" %>class="disabled"<% end %>>Show relative paths</label> </p>
 	</fieldset>
 	
 	<% tags.each do |tag| %>
