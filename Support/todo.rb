@@ -14,10 +14,11 @@ end
 require "#{ENV['TM_SUPPORT_PATH']}/lib/web_preview"
 
 if ARGV.size > 0
-  if ARGV[0] == 'file'
-   ENV.delete 'TM_PROJECT_DIRECTORY'
-  elsif ARGV[0] == 'dir'
-   ENV['TM_PROJECT_DIRECTORY'] = File.dirname ENV['TM_FILEPATH']
+  if ARGV[0] == 'dir'
+    ENV['TM_SELECTED_FILES'] = ""
+    ENV['TM_PROJECT_DIRECTORY'] = File.dirname ENV['TM_FILEPATH']
+  elsif ARGV[0] == 'project'
+    ENV['TM_SELECTED_FILES'] = ""
   end
 end
 
