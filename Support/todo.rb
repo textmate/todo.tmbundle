@@ -85,15 +85,6 @@ TextMate.each_text_file do |file|
           :index => tag[:matches].length
         }
 
-        # Some of the built-in filters produce failures on some of our files
-        # such as the CKEditor ckeditor/plugins/stylescombo/styles/default.js.
-        # We'll skip these to avoid crashing but this appears to indicate a
-        # deeper bug:
-        #
-        # if $1 == nil then
-        #   STDERR.puts("<p style=\"color: red; font-family:monospace; white-space: pre;\">TODO.tmbundle bug: #{tag[:label]} matched nil at #{file}:#{io.lineno}:\n\tRegexp: " + html_escape(tag[:regexp]) + "\n\t Value: " + html_escape(match[:content]) + "\n\n")
-        # end
-
         part = $1 or next
 
         if tag[:label] == "RADAR" then
