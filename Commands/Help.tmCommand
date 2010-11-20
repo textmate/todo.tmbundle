@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>beforeRunningCommand</key>
@@ -32,7 +32,7 @@ Preconfigured tags are:
 * &lt;span style="color: #008000;"&gt;CHANGED&lt;/span&gt;
 * &lt;span style="color: #0090C8;"&gt;RADAR (as &amp;lt;radar://…&amp;gt; or &amp;lt;rdar://…&amp;gt;)&lt;/span&gt;
 
-Those tags can easily be set up via the &lt;span onClick="TextMate.system(&amp;apos;&amp;quot;${TM_RUBY:-ruby}&amp;quot; &amp;quot;$TM_BUNDLE_SUPPORT/lib/settings.rb&amp;quot; &amp;amp;&amp;gt;/dev/null &amp;amp;&amp;apos;, null)"&gt;“Preferences”&lt;/a&gt; command.
+Those tags can easily be set up via the &lt;span onClick="TextMate.system(&amp;apos;&amp;quot;ruby&amp;quot; &amp;quot;$TM_BUNDLE_SUPPORT/lib/settings.rb&amp;quot; &amp;amp;&amp;gt;/dev/null &amp;amp;&amp;apos;, null)"&gt;“Preferences”&lt;/a&gt; command.
 
 # Hints
 
