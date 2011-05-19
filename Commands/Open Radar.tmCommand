@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wKU
+
+link = STDIN.read
+
+if link =~ %r{ra?dar://(?:problem/)?([0-9]+)}
+  %x{ open "http://openradar.appspot.com/#{$1}" }
+else
+  puts "Error parsing issue number: #{link}"
+end
+</string>
+	<key>hideFromUser</key>
+	<string>1</string>
+	<key>input</key>
+	<string>scope</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string></string>
+	<key>name</key>
+	<string>Open Radar</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>html</string>
+	<key>outputLocation</key>
+	<string>toolTip</string>
+	<key>scope</key>
+	<string>markup.underline.link.radar</string>
+	<key>uuid</key>
+	<string>0711A4CE-3C0C-42B6-AA44-3CA3038DC391</string>
+	<key>version</key>
+	<string>2</string>
+</dict>
+</plist>
