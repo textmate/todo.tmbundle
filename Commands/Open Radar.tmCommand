@@ -32,10 +32,10 @@ end
 	<key>outputLocation</key>
 	<string>toolTip</string>
 	<key>scope</key>
-	<string>markup.underline.link.radar</string>
+	<string>L:markup.underline.link.radar | R:markup.underline.link.radar</string>
 	<key>uuid</key>
 	<string>0711A4CE-3C0C-42B6-AA44-3CA3038DC391</string>
 	<key>version</key>
-	<string>2</string>
+	<integer>2</integer>
 </dict>
 </plist>
