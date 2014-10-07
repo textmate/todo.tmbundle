@@ -94,7 +94,7 @@ TextMate.each_text_file do |file|
 
         part = $1 or next
 
-        if tag[:label] == "RADAR" then
+        if tag[:label] == "RADAR" &amp;&amp; $~.captures.count == 3 then
           url, display = (ENV['TM_RDAR_URL'] || "http://openradar.appspot.com/") + $2, "rdar://" + $2
           match[:match] = html_escape($1) + "&lt;a href=\"" + url + "\" target=\"_blank\"&gt;" + html_escape(display) + "&lt;/a&gt;" + html_escape($3)
         else
